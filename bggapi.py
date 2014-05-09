@@ -68,4 +68,3 @@ class BGGApi(object):
             )
 
             yield game
-

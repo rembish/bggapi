@@ -40,7 +40,7 @@ class BGGApi(object):
             return boardgame
 
     def _fetch(self, ids):
-        url = '%s/boardgame/%s' % (self.base, ','.join(map(str, ids)))
+        url = '%s/boardgame/%s?stats=1' % (self.base, ','.join(map(str, ids)))
         root = parse(urlopen(url)).getroot()
 
         for boardgame in root.iter("boardgame"):
@@ -60,11 +60,14 @@ class BGGApi(object):
             thumbnail = boardgame.find('./thumbnail').text
             image = boardgame.find('./image').text
 
+            rating = float(boardgame.find('./statistics/ratings/average').text)
+
             game = BoardGame(
                 bgg_id=id, title=title, year=year,
                 aliases=aliases, players=players,
                 playtime=playtime, description=description,
-                thumbnail=thumbnail, image=image
+                thumbnail=thumbnail, image=image,
+                rating=rating
             )
 
             yield game

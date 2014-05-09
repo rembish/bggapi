@@ -1,3 +1,9 @@
+python-boardgamegeekapi (1.0.1) precise; urgency=low
+
+  * Rating added.
+
+ -- Aleksey Rembish <alex@rembish.org>  Fri, 09 May 2014 16:19:59 +0200
+
 python-boardgamegeekapi (1.0.0) precise; urgency=low
 
   * Initial release.

@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-from bggapi._internals import cached_property, HtmlStripper
+from bggapi._internals import CachedProperty as cached_property, HtmlStripper
 
 
 class BoardGame(object):

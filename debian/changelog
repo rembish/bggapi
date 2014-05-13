@@ -1,8 +1,9 @@
-python-boardgamegeekapi (1.1.0) UNRELEASED; urgency=low
+python-boardgamegeekapi (1.2.0) UNRELEASED; urgency=low
 
   * Better API.
+  * Project restructured.
 
- -- Aleksey Rembish <alex@rembish.org>  Mon, 12 May 2014 17:42:04 +0200
+ -- Aleksey Rembish <alex@rembish.org>  Tue, 13 May 2014 10:57:18 +0200
 
 python-boardgamegeekapi (1.0.1) precise; urgency=low
 
